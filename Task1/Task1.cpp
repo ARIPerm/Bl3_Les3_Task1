@@ -69,6 +69,7 @@ int main()
         std::ofstream fileOutput{ fileNameOutput };
         if (fileOutput.is_open())
         {
+            fileOutput << count << std::endl;
             for (Address element : address)
             {
                 fileOutput << element.getCity() << ", " << element.getStreet() << ", " << element.getHouse() << ", " << element.getFlat() << std::endl;
